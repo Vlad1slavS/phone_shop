@@ -6,7 +6,7 @@ import HelloWorld from './components/header.vue'
   <div class="container">
     <header class="bg-[#A5D364]">
       <img src="" alt="">
-      <h1>СОТКА</h1>
+      <h1 class="text-3xl font-bold">СОТКА</h1>
     </header>
     <HelloWorld />
   </div>
