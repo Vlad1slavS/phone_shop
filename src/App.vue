@@ -1,5 +1,11 @@
-<script setup>
-import HelloWorld from './components/header.vue'
+<script>
+import CategoryCart from './components/category_cart.vue';
+
+export default {
+  components: {
+    CategoryCart
+  }
+}
 </script>
 
 <template>
@@ -9,27 +15,16 @@ import HelloWorld from './components/header.vue'
       <h1 class="text-3xl font-bold text-white">СОТКА</h1>
     </header>
     <div class="grid grid-cols-2 gap-2 justify-center mt-16">
-      <div class="category_item flex flex-col items-center">
-        <img class="w-64" src="./assets/category_iphones.jpg" alt="">
-        <a class=" uppercase" href="">Iphone</a>
-      </div>
-      <div class="category_item flex flex-col items-center">
-        <img class="w-64" src="./assets/mac_category.jpg" alt="">
-        <a href="">Macbooks</a>
-      </div>
-      <div class="category_item flex flex-col items-center">
-        <img class="w-64" src="./assets/category_iphones.jpg" alt="">
-        <a href="">Iphone</a>
-      </div>
-      <div class="category_item flex flex-col items-center">
-        <img class="w-64" src="./assets/category_iphones.jpg" alt="">
-        <a href="">Iphone</a>
-      </div>
+      <CategoryCart categoryName="Iphone" imageSrc='src/assets/category_iphones.jpg' />
+      <CategoryCart categoryName="Macbooks" imageSrc='src/assets/mac_category.jpg' />
+      <CategoryCart categoryName="AirPods" imageSrc='src/assets/airpods_category.jpg' />
+      <CategoryCart categoryName="Аксесуары" imageSrc='src/assets/accessories_category.jpg' />
     </div>
-
     <button class="bg-[#64A4D3] w-full h-12 font-bold items-center px-4 text-white rounded-2xl">КОРЗИНА</button>
   </div>
 
 </template>
+
+
 
 <style scoped></style>
