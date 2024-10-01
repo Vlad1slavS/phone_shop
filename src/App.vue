@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="container w-full pt-4 px-2 max-w-[414px] overflow-hidden">
+  <div class="container w-full pt-4 px-2 max-w-[500px] overflow-hidden">
     <header class=" h-16 flex items-center  justify-between mb-10">
       <div class="flex"> <img class="h-10 w-10 mr-2" src="./assets/battery.svg" alt="">
         <h1 class="text-3xl font-bold text-black">СОТКА</h1>
@@ -28,7 +28,7 @@ export default {
           <p class="text-md">Еще больше возможностей</p>
         </div>
         <div>
-          <img class="h-28" src="./assets/iph16.png" alt="">
+          <img class="h-28 mr-10" src="./assets/iph16.png" alt="">
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@ export default {
     <!-- <Slider /> -->
     <div class="scrollbar_categories overflow-x-scroll whitespace-nowrap scrollbar-hide scrollbar-w">
       <div class="flex">
-        <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Iphone</p>
+        <p class="font-bold text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Iphone</p>
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Macbook</p>
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">AirPods</p>
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Аксесуары</p>
