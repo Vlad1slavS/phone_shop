@@ -35,7 +35,7 @@ export default {
 
 
     <!-- <Slider /> -->
-    <div class="overflow-x-auto whitespace-nowrap">
+    <div class="scrollbar_categorys overflow-x-scroll whitespace-nowrap scrollbar-hide">
       <div class="flex">
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Iphone</p>
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Macbook</p>
@@ -58,4 +58,15 @@ export default {
 
 
 
-<style scoped></style>
+<style scoped>
+.scrollbar_categorys {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar_categorys::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+</style>
