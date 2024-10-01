@@ -1,7 +1,8 @@
 <template>
-    <div class="category_item flex flex-col items-center">
-        <a href=""><img class="w-64 h-30" :src="imageSrc" alt=""></a>
-        <a class="mt-4">{{ categoryName }}</a>
+    <div class="category_item flex flex-col items-center mb-10">
+        <a href=""><img class="h-30" :src="imageSrc" alt=""></a>
+        <a class="mt-1 text-xl mb-1">{{ categoryName }}</a>
+        <p class="font-bold text-lg">{{ price }} руб</p>
     </div>
 </template>
 
@@ -11,6 +12,7 @@ export default {
     props: {
         categoryName: String,
         imageSrc: String,
+        price: Number,
     }
 }
 </script>

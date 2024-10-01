@@ -35,7 +35,7 @@ export default {
 
 
     <!-- <Slider /> -->
-    <div class="scrollbar_categorys overflow-x-scroll whitespace-nowrap scrollbar-hide">
+    <div class="scrollbar_categories overflow-x-scroll whitespace-nowrap scrollbar-hide scrollbar-w">
       <div class="flex">
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Iphone</p>
         <p class="text-lg text-white bg-slate-700 px-4 py-2 rounded-3xl mr-3">Macbook</p>
@@ -47,10 +47,11 @@ export default {
 
 
     <div class=" justify-center mt-16">
-      <CategoryCart categoryName="Iphone" imageSrc='src/assets/category_iphones.jpg' />
-      <CategoryCart categoryName="Macbooks" imageSrc='src/assets/mac_category.jpg' />
-      <CategoryCart categoryName="AirPods" imageSrc='src/assets/airpods_category.jpg' />
-      <CategoryCart categoryName="Аксесуары" imageSrc='src/assets/accessories_category.jpg' />
+      <CategoryCart price=78120 categoryName="Iphone 16" imageSrc='src/assets/iph16.png' />
+      <CategoryCart price=78120 categoryName="Iphone 16" imageSrc='src/assets/iph16.png' />
+      <CategoryCart price=78120 categoryName="Iphone 16" imageSrc='src/assets/iph16.png' />
+      <CategoryCart price=78120 categoryName="Iphone 16" imageSrc='src/assets/iph16.png' />
+      <CategoryCart price=78120 categoryName="Iphone 16" imageSrc='src/assets/iph16.png' />
     </div>
   </div>
 
@@ -59,14 +60,7 @@ export default {
 
 
 <style scoped>
-.scrollbar_categorys {
-  overflow: auto;
-  -ms-overflow-style: none;
+.scrollbar_categories {
   scrollbar-width: none;
-}
-
-.scrollbar_categorys::-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 </style>
