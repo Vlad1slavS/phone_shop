@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black max-w-md mx-auto rounded-3xl overflow-hidden">
+    <div class="bg-black max-w-md mx-auto rounded-2xl overflow-hidden items-center justify-center px-4">
         <transition name="slide">
             <div class="flex justify-center items-center py-10 text-white" :key="currentIndex">
                 <div class="mr-10 text-center">
@@ -56,7 +56,7 @@ export default {
         startAutoSlide() {
             this.intervalId = setInterval(() => {
                 this.nextSlide();
-            }, 4500);
+            }, 2000);
         },
     },
     mounted() {
@@ -68,9 +68,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .slide-enter-active {
-    transition: transform 0.1s easy;
+    transition: all ease 0.6s;
 }
 
 .slide-enter {
@@ -78,7 +78,7 @@ export default {
 }
 
 .slide-leave-active {
-    transition: transform 0.4s ease;
+    transition: all ease 0.6s;
     position: absolute;
     width: 100%;
 }
