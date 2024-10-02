@@ -218,6 +218,41 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@primeuix/styled@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@primeuix/styled/-/styled-0.0.5.tgz#430d06554470fddc28814059d76e63c9c21535b9"
+  integrity sha512-pVoGn/uPkVm/DyF3TR3EmH/pL/dP4nR42FcYbVduFq9VfO3KVeOEqvcCULHXos66RZO9MCbCFUoLy6ctf9GUGQ==
+  dependencies:
+    "@primeuix/utils" "^0.0.5"
+
+"@primeuix/utils@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@primeuix/utils/-/utils-0.0.5.tgz#4bb032a3338fba51c1a2df8010d91973b6fa2520"
+  integrity sha512-ntUiUgtRtkF8KuaxHffzhYxQxoXk6LAPHm7CVlFjdqS8Rx8xRkLkZVyo84E+pO2hcNFkOGVP/GxHhQ2s94O8zA==
+
+"@primevue/core@4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@primevue/core/-/core-4.0.7.tgz#d02191b89223ab3874ad3417b83559c8f88a7c65"
+  integrity sha512-SvWiNBEeR6hm4wjnze+rITUjHMFLwIzpRFlq+GqmJyZmjJy4h8UUksi0EoyqAWCAwKgmwlxY6XNqGJmMVyOguQ==
+  dependencies:
+    "@primeuix/styled" "^0.0.5"
+    "@primeuix/utils" "^0.0.5"
+
+"@primevue/icons@4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@primevue/icons/-/icons-4.0.7.tgz#e12ee9846d140eb7ee9397b2cf8d491454c60e9f"
+  integrity sha512-tj4dfRdV5iN6O0mbkpjhMsGlT3wZTqOPL779ndY5gKuCwN5zcFmKmABWVQmr/ClRivnMkw6Yr1x6gRTV/N0ydg==
+  dependencies:
+    "@primeuix/utils" "^0.0.5"
+    "@primevue/core" "4.0.7"
+
+"@primevue/themes@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@primevue/themes/-/themes-4.0.7.tgz#6811e0196c02e8217492713ed5365021cd931dc5"
+  integrity sha512-ZbDUrpBmtuqdeegNwUaJTubaLDBBJWOc4Z6UoQM3DG2c7EAE19wQbuh+cG9zqA7sT/Xsp+ACC/Z9e4FnfqB55g==
+  dependencies:
+    "@primeuix/styled" "^0.0.5"
+
 "@rollup/rollup-android-arm-eabi@4.22.5":
   version "4.22.5"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.22.5.tgz#e0f5350845090ca09690fe4a472717f3b8aae225"
@@ -931,6 +966,21 @@ postcss@^8.4.23, postcss@^8.4.43, postcss@^8.4.47:
     nanoid "^3.3.7"
     picocolors "^1.1.0"
     source-map-js "^1.2.1"
+
+primeicons@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-7.0.0.tgz#6b25c3fdcb29bb745a3035bdc1ed5902f4a419cf"
+  integrity sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==
+
+primevue@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/primevue/-/primevue-4.0.7.tgz#ce9783a99d2259b4f7f35c79eaff3380ed108cd3"
+  integrity sha512-88qazHqldkqsCxvhjnjO65XMBfJyHQoFW3BQvrJYO6RqPheHB4f7cY61eqtBpJAjnM5x+YKTZiWx/gBuUzqT7Q==
+  dependencies:
+    "@primeuix/styled" "^0.0.5"
+    "@primeuix/utils" "^0.0.5"
+    "@primevue/core" "4.0.7"
+    "@primevue/icons" "4.0.7"
 
 queue-microtask@^1.2.2:
   version "1.2.3"
